@@ -68,8 +68,6 @@ func getEnv(key string) string {
 func main() {
 	be := &Backend{}
 
-	log.Printf("%d", len(os.Args))
-
 	s := smtp.NewServer(be)
 
 	if len(os.Args) == 1 {
